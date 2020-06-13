@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#timer {
+    font-family: "Lato";
+    font-size: 9em;
+    font-weight: 100;
+}
+
+button {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+button.selected {
+    color: black;
+    background: #5cf35c;
+    font-weight: bold;
+}
+
+button.pause {
+    color: black;
+    background: #ffff71;
+    font-weight: bold;
+}
+
+
+.colored-num-0 {
+    color: #f44336;
+}
+
+.colored-num-1 {
+    color: #9C27B0;
+}
+
+.colored-num-2 {
+    color: #3F51B5;
+}
+
+.colored-num-3 {
+    color: #03A9F4;
+}
+
+.colored-num-4 {
+    color: #00BCD4;
+}
+
+.colored-num-5 {
+    color: #4CAF50;
+}
+
+.colored-num-6 {
+    color: #CDDC39;
+}
+
+.colored-num-7 {
+    color: #FFC107;
+}
+
+.colored-num-8 {
+    color: #FF5722;
+}
+
+.colored-num-9 {
+    color: #546E7A;
+}
