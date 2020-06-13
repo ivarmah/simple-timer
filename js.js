@@ -9,7 +9,7 @@ resetBtn.addEventListener("click", function () {
     watch.reset();
 })
 
-const msStepValues = [100, 200, 250, 500];
+const msStepValues = [10, 50, 100, 200, 250, 500];
 
 const stepButtons = [];
 
