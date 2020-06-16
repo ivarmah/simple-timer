@@ -74,7 +74,6 @@ function Stopwatch(elem) {
 
         const ms = (Math.round(milliseconds / msStep)).toString();
 
-
         let coloredNumbers = ms.split("")
             .map(n => `<span class='colored-num-${n}'>${n}</span>`)
             .join('')
@@ -87,16 +86,14 @@ function Stopwatch(elem) {
             seconds = "0" + seconds;
         }
 
-        console.log(msStep, ms.split(""))
         if ((msStep === 10 || msStep === 50) && ms.split("").length === 1) {
-            coloredNumbers += "<span class='colored-num-0'>0</span>";
+            coloredNumbers = "<span class='colored-num-0'>0</span>" + coloredNumbers;
         }
 
         return minutes + ":" + seconds + "." + coloredNumbers;
     }
 
     this.start = (step) => {
-        console.log("step", step)
         if (!this.isOn) {
             interval = setInterval(update.bind(this), step);
             offset = Date.now();
